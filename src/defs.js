@@ -18,3 +18,10 @@ NO_SQ:99, OFFBOARD:100
 };
 
 var BOOL = { FALSE:0, TRUE:1 };
+
+var FilesBrd = new Array(BRD_SQ_NUM);
+var RanksBrd = new Array(BRD_SQ_NUM);
+
+function FR2SQ(f,r) {
+ 	return ( (21 + (f) ) + ( (r) * 10 ) );
+}
